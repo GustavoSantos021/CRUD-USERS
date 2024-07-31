@@ -5,8 +5,10 @@
         <h1 class="title">CRUD USERS</h1>
         <h2 class="subtitle">Users control and management from every where</h2>
 
-        <input class="input-form" type="text" placeholder="Enter your name">
-        <app-button textButton="Acess" size="100" ></app-button>
+        <input [(ngModel)]="userName" [ngModelOptions]="{standalone: true}" class="input-form" type="text" placeholder="Enter your name">
+
+        <app-button textButton="Acess" size="100" (click)="login()" ></app-button>
+
     </form>
     <p class="footer">©️ 2024 | developed by Gustavo dos Santos</p>
 </div>
