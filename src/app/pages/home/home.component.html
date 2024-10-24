@@ -1,54 +1,117 @@
 <app-menu></app-menu>
 
-<div class="container-fluid pt-3">
-    <div class="row">
-        <!-- LEFT SIDE OF THE SCREEN -->
-        <div class="col-12 col-lg-9">
-            <div class="card-info">
-                <div class="row">
-                    <div class="col-12 col-md-8">
-                        <h1 class="title">Crud Users</h1>
-                        <h3 class="subtitle">
-                            a new mode of <span>manage</span> your database of users
-                        </h3>
+<div class="container-fluid pt-3">                                       <!-- HOME CONTAINER -->
+ <div class="row">                                                       <!-- GRID CONTAINER -->
 
-                        <app-button textButton="Start" routerLink="/users"> </app-button>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <img src="../../../assets/dashboard.png" width="100%" >
-                    </div>
-                </div>
+  <div class="col-12 col-lg-9">     <!-- LEFT SIDE OF GRID -->
+   <div class="card-info">
+
+    <div class="row mt-4">   <!-- FIRST ROW -->    
+      <div class="col-12 col-md-8">
+       <h1 class="title">Crud Users</h1>
+        <h3 class="subtitle">
+          a new mode of 
+           <span>manage</span>
+            your database of users
+             </h3>
+            <app-button textButton="Start" routerLink="/users"> </app-button>
+          </div>
+         <div class="col-12 col-md-4">
+        <img src="../../../assets/dashboard.png" width="100%">
+      </div>
+    </div>              <!-- END OF FIRST ROW -->
+
+    <div class="row mt-4">  <!-- SECOND ROW -->
+     <div class="col-6">
+      <div class="card-info">
+       <div class="row">
+        <div class="col-6">
+         <p class="subtitle-card">Lorem ipsum dolor,</p>
+          <p class="number-card">79</p>
+           <p class="span-card">Lorem ipsum dolor sit</p>
             </div>
+            <div class="col-6">
+               <mat-progress-spinner 
+                 class="example-margin mx-auto color-spinner" 
+                 mode="determinate" 
+                 value="80">
+                </mat-progress-spinner>
+                <p class="info-spinner">79/150</p>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+                <div class="col-6">
+                <div class="card-info">
+                <div class="row">
+                <div class="col-6">
+                <p class="subtitle-card">Lorem ipsum dolor,</p>
+                <p class="number-card">79</p>
+                <p class="span-card">Lorem ipsum dolor sit</p>
+            </div>
+           <div class="col-6">
+          <mat-progress-spinner class="example-margin mx-auto color-spinner" mode="determinate" value="80"></mat-progress-spinner>
+         <p class="info-spinner">4/5</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>                  <!-- END OF SECOND ROW -->
 
-            <div class="row mt-4">
-                <!-- LEFT CARD -->
-                <div class="col-6 ">
+    <div class="row mt-4">      <!-- THIRD ROW -->
+                <div class="col-12">
                     <div class="card-info">
+                        <h3 class="title">Last person registered</h3>
+                        <hr class="hr">
                         <div class="row">
-                            <!-- LEFT CARD TEXT -->
-                            <div class="col-6 ">
-                                <p class="subtitle-card">Lorem ipsum dolor,</p>
-                                <p class="number-card"> 79</p>
-                                <p class="span-card">Lorem ipsum dolor sit </p>
+                            <!-- USER ICON AND DETAILS -->
+                            <div class="col-1">
+                                <mat-icon>account_circle</mat-icon>
                             </div>
-                            <!-- LEFT CARD SPINNER -->
-                            <div class="col-6">
-                            <mat-progress-spinner class="example-margin mx-auto color-spinner" mode="determinate" value="80"></mat-progress-spinner>
-                            <p class="info-spinner">79/150</p>
+                            <div class="col-1">
+                                <p class="text-p">1</p>
+                            </div>
+                            <div class="col-1">
+                                <p class="text-p">Last person</p>
+                            </div>
+                            <div class="col-1">
+                                <p class="text-p">Employer</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="card-info">
-                        <diV class="row">                            <!-- RIGHT CARD TEXT -->
-                            <div class="col-6 ">
-                                <p class="subtitle-card">Lorem ipsum dolor,</p>
-                                <p class="number-card"> 79</p>
-                                <p class="span-card">Lorem ipsum dolor sit </p>
-                            </div>
-                            <!-- RIGHT CARD SPINNER -->
-                            <div class="col-6">
-                            <mat-progress-spinner class="example-margin mx-auto color-spinner" mode="determinate" value="80"></mat-progress-spinner>
-                            <p class="info-spinner">4/5</p>
-                            </div>
+
+    </div>                      <!-- END OF THIRD ROW -->
+
+   </div>
+  </div>                            <!-- END OF GRID LEFT SIDE -->
+
+  <div class="col-12 col-lg-3">     <!-- RIGHT SIDE OF GRID -->
+   <div class="card-info">
+    <div class="container-profile">
+        <img src="../../../assets/logo.png" class="img-profile" width="90px" >
+        <h4>Welcome!</h4>
+        <h5>Person name</h5>
+        <li> <mat-icon>location_on</mat-icon> JP - PB</li>
+
+        <hr class="hr">
+        <p class="text-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Cumque animi asperiores numquam quis iusto! Reiciendis
+            nulla natus magnam aspernatur sequi blanditiis.
+        </p>
+        <hr class="hr">
+
+        <li><mat-icon>person</mat-icon>Manage</li>
+        <li><mat-icon>loyalty</mat-icon>Add</li>
+        <li><mat-icon>format_list_bulleted</mat-icon>Search</li>
+        <li><mat-icon>delete</mat-icon>Delete</li>
+
+    </div>
+   </div>
+  </div>                            <!-- END OF GRID RIGHT SIDE -->
+
+ </div>                                                                 <!-- END OF GRID CONTAINER -->
+</div>                                                                  <!-- END OF HOME CONTAINER -->
+
+
